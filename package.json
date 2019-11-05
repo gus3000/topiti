@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "ejs": "latest",
-    "express": "latest"
+    "express": "latest",
+    "express-session": "latest"
   }
 }
