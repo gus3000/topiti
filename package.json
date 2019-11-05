@@ -1,0 +1,8 @@
+{
+  "name": "topiti",
+  "version": "1.0.0",
+  "dependencies": {
+    "ejs": "latest",
+    "express": "latest"
+  }
+}
