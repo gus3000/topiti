@@ -5,5 +5,11 @@
     "ejs": "latest",
     "express": "latest",
     "express-session": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
   }
 }
