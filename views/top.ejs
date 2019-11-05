@@ -6,9 +6,13 @@
 </head>
 <body>
 <ol>
-    <li>Pursuit of happyness</li>
-    <li>I am Legend</li>
-    <li>I, Robot</li>
+    <%
+    for (let i = 0; i < films.length; i++) {
+    %>
+        <li><%= films[i] %></li>
+    <%
+    }
+    %>
 </ol>
 </body>
 </html>
