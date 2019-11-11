@@ -9,12 +9,25 @@ app.use(session({
     saveUninitialized: true
 }));
 
+app.use(express.urlencoded());
+
 app.use((req,res,next) => {
     if(!req.session.films)
     {
         req.session.films = ["Pursuit of Happyness", "I am Legend", "I, Robot"];
     }
     next();
+});
+
+app.post("/top/add", (req, res, next) => {
+    if(!req.body.film)
+    {
+        console.log("oups");
+        res.redirect("/top");
+        return;
+    }
+    req.session.films.push(req.body.film);
+    res.redirect("/top");
 });
 
 app.use("/top", (req,res) => {
